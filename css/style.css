@@ -8,12 +8,17 @@ body {
   color: white;
 }
 
+.header {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url(../img/bg-image.png) no-repeat center top / cover;
+}
+
 .container {
   max-width: 1170px;
   margin: auto;
 }
 
-.header {
+.navbar {
   display: flex;
   align-items: center;
   padding: 30px 0;
@@ -46,4 +51,138 @@ body {
   margin-left: auto;
   display: flex;
   align-items: center;
+}
+
+.film {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.film-title-small {
+  font-size: 24px;
+  line-height: 150%;
+  opacity: 0.5;
+}
+
+.film-title {
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 11px;
+  margin-bottom: 23px;
+}
+
+.film-description {
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 560px;
+}
+
+.film-trailer {
+  margin: auto;
+}
+
+.film-details {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.time-icon {
+  margin-right: 14px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-left: 34px;
+}
+
+.rating-icon {
+  margin-right: 14px;
+}
+
+.rating-counter strong {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.session {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 45px;
+  padding-bottom: 65px;
+  margin-top: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.session-label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.session-date-block {
+  display: flex;
+}
+
+.session-date-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  margin-right: 15px;
+  transition: background-color 0.2s;
+  transition: color 0.2s;
+}
+
+.session-date-item:hover,
+.session-date-item:focus {
+  background-color: #FE8E05;
+  color: #621402;
+  cursor: pointer;
+}
+
+.session-month {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.session-day {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.17;
+}
+
+.session-week {
+  font-size: 19px;
+  line-height: 1.16;
+}
+
+.select {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  color: white;
+  padding: 18px;
+  margin-top: 15px;
+}
+
+.select option {
+  background-color: #621402;
+}
+
+.select-cinema {
+  min-width: 470px;
 }
