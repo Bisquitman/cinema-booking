@@ -265,6 +265,10 @@ body {
   line-height: 1.17;
 }
 
+.price-total {
+  margin-right: 15px;
+}
+
 .button {
   padding: 24px 52px;
   background: #FE8E05;
