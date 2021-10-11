@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,6 +22,13 @@
         <img src="img/logo.svg" alt="Logo image">
       </a>
       <nav class="nav">
+        <button class="m-menu">
+          <svg width="15" height="9" viewbox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="0.5" x2="15" y2="0.5" stroke="white" />
+            <line y1="4.5" x2="15" y2="4.5" stroke="white" />
+            <line y1="8.5" x2="15" y2="8.5" stroke="white" />
+          </svg>
+        </button>
         <ul class="menu">
           <li class="menu-item"><a href="#" class="menu-link">Главная</a></li>
           <li class="menu-item"><a href="#" class="menu-link">Фильмы</a></li>
@@ -60,7 +68,8 @@
         <!-- /.film-details -->
       </div>
       <!-- /.film-info -->
-      <a href="##" class="film-trailer">
+      <a data-fancybox="video-gallery" data-src="https://www.youtube.com/watch?v=UsnDPok1ZOU" href="##"
+        class="film-trailer">
         <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="50" cy="50" r="50" fill="white" />
           <g clip-path="url(#clip0)">
@@ -127,11 +136,11 @@
   </header>
   <div class="scheme container">
 
-    <svg class="scheme-svg" width="1170" height="600" viewBox="0 0 1170 600" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+    <svg class="scheme-svg" viewBox="0 0 1170 600" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect class="scheme-bg" width="1170" height="686" rx="10" fill="#242424" fill-opacity="0.18" />
       <path class="light" d="M128 115L201.04 48H968.96L1042 115H128Z" fill="url(#paint0_linear)" />
-      <line x1="76" y1="43" x2="1094" y2="43" stroke="black" stroke-opacity="0.39" stroke-width="10" />
+      <line class="scheme-line" x1="76" y1="43" x2="1094" y2="43" stroke="black" stroke-opacity="0.39"
+        stroke-width="10" />
       <path
         d="M130 158.5C130 158.526 130.001 158.551 130.003 158.577C130.096 159.791 130.537 161.596 131.588 163.128C132.666 164.699 134.409 166 137 166H159.5C159.524 166 159.548 165.999 159.571 165.997C160.899 165.903 162.851 165.373 164.496 164.072C166.181 162.738 167.5 160.622 167.5 157.5V148H165.5V157.5C165.5 159.978 164.486 161.529 163.254 162.503C161.996 163.499 160.469 163.921 159.463 164H137C135.191 164 134.018 163.134 133.237 161.997C132.44 160.835 132.08 159.413 132 158.46V148H130V158.5ZM156.5 135H140.5C137.186 135 134.5 137.686 134.5 141V154C134.5 157.314 137.186 160 140.5 160H156.5C159.814 160 162.5 157.314 162.5 154V141C162.5 137.686 159.814 135 156.5 135Z" />
       <path
@@ -461,7 +470,6 @@
             d="M0 24.5C0 24.5256 0.000982583 24.5512 0.00294554 24.5767C0.0963478 25.7909 0.536755 27.5963 1.58794 29.1283C2.66579 30.6991 4.40875 32 7 32H29.5C29.5238 32 29.5475 31.9992 29.5712 31.9975C30.8985 31.9027 32.8511 31.3731 34.4956 30.0716C36.1806 28.7381 37.5 26.6218 37.5 23.5V14H35.5V23.5C35.5 25.9782 34.486 27.5286 33.2544 28.5034C31.9964 29.499 30.4694 29.9212 29.4627 30H7C5.19125 30 4.01754 29.1342 3.23706 27.9967C2.44021 26.8354 2.07957 25.4126 2 24.46V14H0V24.5ZM26.5 1H10.5C7.18629 1 4.5 3.68629 4.5 7V20C4.5 23.3137 7.18629 26 10.5 26H26.5C29.8137 26 32.5 23.3137 32.5 20V7C32.5 3.68629 29.8137 1 26.5 1Z"
             stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linejoin="round" />
         </svg>
-
         <span class="legend-text">Свободно</span>
       </div>
 
@@ -492,9 +500,12 @@
       <span class="price-label">Всего к оплате</span>
       <span class="price-total">0</span><span class="ruble">₽</span>
     </div>
-    <a href="##" class="button button-pay">Перейти к оплате</a>
+    <a href="##" class="button button-pay">
+      Перейти к оплате
+    </a>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 
